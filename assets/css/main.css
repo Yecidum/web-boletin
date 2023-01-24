@@ -1,0 +1,222 @@
+/*
+rojo- #ED213A
+verde claro -#00B4DB
+verde semi - #2ebf91
+azul pastel - #1565c0 
+azul oscuro - #4286f4
+rosa -  color: #d500f9;
+*/
+
+/*FUENTE GOOGLE FONTS*/
+html{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #d500f9;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*PSEUDO CLASE*/
+a:hover {
+    opacity: 0.3;
+    color: aqua;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align:center;
+}
+
+
+
+
+/*comentario*/
+
+.container {
+    background: #74ebd5;  /* respaldo*/
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+/*centrar elemento*/
+align-items: center;
+justify-content: center;
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+
+
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /*redondear cuatro esquinas*/
+    border-radius: 4px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+}
+
+.content{
+    padding: 1.8em;
+}
+
+td{
+    display: block;
+    width: 100%;
+}
+
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4286f4;
+}
+th {
+    display: none;
+}
+
+/*boton X*/
+
+.actions {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #d500f9;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.paragraph {
+
+    line-height: 1.8em;
+    font-weight: 300;
+}
+
+/*MODIFICA COLOR DEL ICONO estrella llena y vacia */
+
+.fa-star, .fa-star-o{
+    color:#ffc400;
+}
+
+
+h1 {
+    color: #4286f4;
+}
+
+
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th {
+    padding: 1em;
+    text-align: left;
+}
+
+/*odd impares even pares SELECCION DE LA TABLA USADA*/
+.table tr:nth-child(even){
+    background-color:#00B4DB;
+}
+
+.title-item {
+    font-size: 2em;
+    border-bottom: solid 2px #C642E6;
+    padding-bottom: 1em;
+}
+
+.address{
+
+    font-weight: bold;
+    color: #642b73;
+    padding-bottom: 1.2em;
+    margin-top: 2em;
+    display: inline-block;
+
+}
+
+.main-imagen{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+
+}
+
+.position {
+    background-color: #C642E6;
+    color: white;
+    /*sentido agujas reloj 12-3-6-9*/
+    padding: 0.5em;
+    /*redondear cuatro esquinas*/
+   border-radius: 4px;
+   margin-right: 0.5em;
+   /**para definir moovimiento en eje x o eje y*/
+   overflow: scroll;
+   
+
+}
+
+/*Duracion de la animacion en SEgundos*/
+.animate__animated.animate__backInDown {
+    --animate-duration: 2.5s;
+  }
+
+
+  @media (min-width:900px){
+
+    th {
+
+        display: table-cell;
+        
+    }
+
+    td{
+        width: auto;
+        display: table-cell;
+
+    }
+    
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+
+    .content {
+        padding: 1.8em;
+    }
+    
+}
+
+    .content{
+        height: 500px;
+    }
+
+  }
+
+  @media (max-width:600px){
+
+    
+
+  }
